@@ -55,7 +55,7 @@
 .modal {
     padding: 20px;
     background-color: var(--color-light);
-    // position: absolute;
+    position: absolute;
 
     top: 50%;
     left: 50%;
@@ -65,7 +65,7 @@
     min-height: 609px;
 
         @media screen and (min-width: $desktop) {
-            position: absolute;
+            // position: absolute;
             max-width: 528px;
             width: 100%;
             min-height: 581px;
