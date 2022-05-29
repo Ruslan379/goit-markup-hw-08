@@ -12,11 +12,11 @@
 @import "./components/modal";
 @import "./components/title";
 
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/features";
-@import "./layout/activities";
-@import "./layout/team";
-@import "./layout/clients";
-@import "./layout/projects";
-@import "./layout/footer";
+@import "./layout/00-header";
+@import "./layout/01-hero";
+@import "./layout/02-features";
+@import "./layout/03-activities";
+@import "./layout/04-team";
+@import "./layout/05-clients";
+@import "./layout/10-projects";
+@import "./layout/06-footer";
