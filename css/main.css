@@ -230,6 +230,16 @@ body.modal-open {
   padding-left: 15px;
   overflow-y: scroll;
 }
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding-top: 208px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding-top: 221px;
+  }
+}
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -252,6 +262,7 @@ body.modal-open {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
+  min-height: 609px;
 }
 @media screen and (min-width: 1200px) {
   .modal {
