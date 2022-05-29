@@ -88,7 +88,7 @@ body {
 
 /* a {text-decoration: none;} */
 /* ul {list-style-type: none;} */
-.clients-list {
+.clients-list, .activities__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -97,6 +97,11 @@ body {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.activities__list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* =====================  ОСНОВНОЙ Контейнер (container) ===================== */
@@ -605,28 +610,25 @@ body {
 
 /* ______________________  К О Н Е Ц Блок-секция_2 Наши особенности ______________________ */
 /* ============== Стилизация Секции Чем мы занимаемся (activities) ============== */
-.section.activities {
+.activities {
   padding-top: 0;
   /* УБРАТЬ */
   /* background-color: rgb(145, 123, 197);  */
 }
+@media screen and (max-width: 767px) {
+  .activities {
+    display: none;
+  }
+}
 
 /* ==== flex-контейнер в Секции Наши особенности (activity) ===== */
-.activity {
-  display: flex;
-  justify-content: space-between;
-}
-
-.activity-card {
+.activities__card {
   position: relative;
-  /* width: 370px; */
-  /* height: 294px; */
 }
 
-.activity-title {
+.activities__title {
   position: absolute;
   width: 100%;
-  /* height: 70px; */
   bottom: 0;
   left: 0;
   padding-top: 27px;
