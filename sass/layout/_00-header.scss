@@ -10,12 +10,38 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--color-border-line);
+
+    .header__list,
+    .header__contacts-list {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
 }
+
+.logo {
+    @media screen and (max-width: 767px) {
+        display: inline-flex;
+        // justify-content: space-between;
+        align-items: center;
+        // margin-right: 276px;
+    }
+}
+
+.container .flex-center {
+    @media screen and (max-width: 767px) {
+        
+        margin-right: 0;
+    }
+}
+
+
 
 /* ============== Кнопка-МЕНЮ (header) ============== */
 .header__menu-button {
     display: inline-flex;
     margin: 0;
+    padding-left: 100px;
     padding: 0;
     border: none;
     background-color: transparent;
@@ -25,7 +51,7 @@
         }
 
         &.is-open .header__icon-close {
-            display: block;
+            display: inline-block;
         }
 
         &.is-open .header__icon-menu {
@@ -33,12 +59,34 @@
         }
 }
 
+/* ============== Позиционорование Кнопок-МЕНЮ (header) ============== */
+// .header__container-button.container {
+//     position: relative;
+//     background-color: tomato;
+// }
+
+.header__menu-button {
+    // position: absolute;
+    // position: fixed;
+    // top: 100%;
+    // top: 10px;
+    // left: 15px;
+    // width: 100%;
+
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+}
+
+
+
 /* ================= МЕНЮ (header) ================= */
 .header__menu-container {
     display: none;
 
     position: absolute;
-    top: 100%;
+    // top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
 
