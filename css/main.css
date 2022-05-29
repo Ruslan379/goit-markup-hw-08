@@ -225,6 +225,7 @@ body.modal-open {
   background-color: var(--color-background-backdrop);
   opacity: 1;
   z-index: 1;
+  padding-top: 93px;
   padding-right: 15px;
   padding-left: 15px;
   overflow-y: scroll;
