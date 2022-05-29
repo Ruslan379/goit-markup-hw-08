@@ -1,12 +1,12 @@
 /* ============== Стилизация Секции_5 Наши клиенты (clients) ============== */
 
 /* ==== flex-контейнер в Секции Секции_5 Наши клиенты (clients) ===== */
-.clients-list {
+.clients__list {
     @extend %lists;
     @extend %flex-wrap;
 }
 
-//! .clients-list {
+//! .clients__list {
 //     display: flex;
 //     justify-content: space-between;
 
@@ -16,7 +16,7 @@
 // }
 // _________________________________________________________________________
 
-.clients-item {
+.clients__item {
     width: 50%;
     height: 92px;
 
@@ -31,7 +31,7 @@
     }
 }
 
-//! .clients-item {
+//! .clients__item {
 //     width: 170px;
 //     height: 92px;
 //     /* display: flex; */
@@ -42,7 +42,7 @@
 // }
 // _________________________________________________________________________
 
-.clients-link {
+.clients__link {
     display: flex;
 
     width: 100%;
@@ -68,8 +68,8 @@
 }
 
 // --------------------------------------------
-// .clients-link:hover,
-// .clients-link:focus {
+// .clients__link:hover,
+// .clients__link:focus {
 //     border: 1px solid var(--color-logo-links-hover);
 //     fill: var(--color-logo-links-hover);
 // }
