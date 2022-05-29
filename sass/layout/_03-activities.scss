@@ -3,13 +3,10 @@
     padding-top: 0;
 
     @media screen and (max-width: 767px) {
-            display: none;
+        display: none;
         }
 
-    /* УБРАТЬ */
-    /* background-color: rgb(145, 123, 197);  */
-
-}
+ }
 
 /* ==== flex-контейнер в Секции Наши особенности (activity) ===== */
 .activities__list {
@@ -44,7 +41,6 @@
     background-color: var(--color-background-activity);
 }
 
-/* === Стилизация Заголовка h2 в Блок-секция_3 Чем мы занимаемся (activities)
-вынесен в Типографику === */
+/* === Стилизация Заголовка h2 Чем мы занимаемся вынесен в _title.scss === */
 
 /* ___________________  К О Н Е Ц Блок-секция_3 Чем мы занимаемся ______________________ */
