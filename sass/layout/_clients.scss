@@ -20,12 +20,12 @@
     width: 50%;
     height: 92px;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         // width: calc((100% - 4 * 5px) / 2);
         width: calc(100% / 3);
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
         width: calc(100% / 6);
     }
