@@ -5,18 +5,12 @@
     @media screen and (max-width: 1199px) {
         display: none;
         }
-
- }
+}
 
 /* ==== flex-контейнер в Секции Наши особенности (activity) ===== */
 .activities__list {
     @extend %lists;
     @extend %flex-space-between;
-    // display: flex;
-    // justify-content: space-between;
-    
-
-    
 }
 
 .activities__card {
