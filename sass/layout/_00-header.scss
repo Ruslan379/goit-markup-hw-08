@@ -18,28 +18,34 @@
         }
     }
 }
-
+// !========= Медиа-правила до ширины 768px ==========
 .logo {
     @media screen and (max-width: 767px) {
-        display: inline-flex;
+        display: flex;
         // justify-content: space-between;
         align-items: center;
         // margin-right: 276px;
     }
 }
 
-.container .flex-center {
+.header .container.flex-center {
     @media screen and (max-width: 767px) {
+        justify-content: space-between;
+            width: 100vw;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            }
         
-        margin-right: 0;
     }
-}
-
+// !______________________________________________________
 
 
 /* ============== Кнопка-МЕНЮ (header) ============== */
 .header__menu-button {
-    display: inline-flex;
+    // display: inline-flex;
+    display: flex;
     margin: 0;
     padding: 0;
     border: none;
@@ -51,14 +57,16 @@
 
         .header__icon-close {
             display: none;
+            
         }
 
         &.is-open .header__icon-close {
-            display: inline-block; // !+++++++ display: block
+            display: block; 
+            // z-index: 7;
         }
 
         &.is-open .header__icon-menu {
-        display: none;
+            display: none;
         }
 }
 
@@ -68,7 +76,7 @@
 //     background-color: tomato;
 // }
 
-.header__menu-button {
+.header__menu-button2 {
     // position: absolute;
     // position: fixed;
     // top: 100%;
@@ -88,7 +96,6 @@
     display: none;
 
     position: absolute;
-    // top: 100%;
     top: 0;
     left: 0;
     width: 100%;
@@ -103,8 +110,17 @@
     &.is-open {
         display: block;
     }
+
+    // &.is-open .header__icon-close {
+    //     display: block;
+    //     z-index: 1;
+    // }
 }
 
+// .header__menu-container.is-open .header__icon-close {
+//     display: block;
+//     z-index: 1;
+// }
 
 
 

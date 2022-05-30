@@ -462,20 +462,25 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .logo {
-    display: inline-flex;
+    display: flex;
     align-items: center;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .container .flex-center {
+  .header .container.flex-center {
+    justify-content: space-between;
+    width: 100vw;
+    margin-left: 0;
     margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 /* ============== Кнопка-МЕНЮ (header) ============== */
 .header__menu-button {
-  display: inline-flex;
+  display: flex;
   margin: 0;
   padding: 0;
   border: none;
@@ -490,7 +495,7 @@ body.modal-open {
   display: none;
 }
 .header__menu-button.is-open .header__icon-close {
-  display: inline-block;
+  display: block;
 }
 .header__menu-button.is-open .header__icon-menu {
   display: none;
