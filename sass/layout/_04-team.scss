@@ -7,12 +7,8 @@
 /* ==== flex-контейнер в Секции Секции Наша команда (team) ===== */
 .team__list {
     @extend %lists;
-    // @extend %flex-space-between;
 
-    text-align: center;
-
-    // display: flex;
-    // justify-content: space-between;
+    // text-align: center;
 
     @media screen and (min-width: $tablet) {
         display: flex;
