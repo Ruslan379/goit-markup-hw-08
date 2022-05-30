@@ -2,7 +2,7 @@
 .activities {
     padding-top: 0;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         display: none;
         }
 
@@ -12,6 +12,9 @@
 .activities__list {
     @extend %lists;
     @extend %flex-space-between;
+    // display: flex;
+    // justify-content: space-between;
+    
 
     
 }
