@@ -111,7 +111,7 @@ body.modal-open {
 
 /* =====================  ОСНОВНОЙ Контейнер (container) ===================== */
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
