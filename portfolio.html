@@ -24,8 +24,8 @@
 <body>
 
     <!-- =============== Шапка сайта (headline) ============== -->
-    <header class="header">
-        <!-- ============ Ссылки-НАВИГАЦИЯ + LOGO в header  =========== -->
+    <!-- <header class="header">
+
         <div class="container flex-center">
             <nav class="header__nav flex-center">
     
@@ -38,7 +38,7 @@
                 </ul>
     
             </nav>
-            <!-- ======== Контакты в header (почта и телефон)  ======= -->
+
             <ul class="header__contacts-list lists">
                 <li class="header__item">
                     <a href="mailto:info@devstudio.com" class="header__contacts-link links">
@@ -59,31 +59,32 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </header> -->
 
     <!-- ============== ОСНОВНОЙ Блок (portfolio) =============== -->
     <main>
         <!-- ============ Блок-секция ГЕРОЙ-ПОРТФОЛИО (projects) =========== -->
-        <section class="section"> 
+        <section class="section section--change-padding"> 
             <div class="container">
                 <!-- === Этот заголовок скрыт === -->
                 <h1 class="visually-hidden">ПОРТФОЛИО</h1>
 
                 <!-- ============ ГЕРОЙ-ССЫЛКИ (btn-filters) =========== -->
-                <ul class="filters-list lists">
+                <!-- <ul class="filters-list lists">
                     <li class="filters-item"><button type="button" class="btn-filters buttons activlink">Все</button></li>
                     <li class="filters-item"><button type="button" class="btn-filters buttons">Веб-сайты</button></li>
                     <li class="filters-item"><button type="button" class="btn-filters buttons">Приложения</button></li>
                     <li class="filters-item"><button type="button" class="btn-filters buttons">Дизайн</button></li>
                     <li class="filters-item"><button type="button" class="btn-filters buttons">Маркетинг</button></li>
-                </ul>
+                </ul> -->
             
                 <!-- =========== ГЕРОЙ-ПРОЕКТЫ (______________) =========== -->
                 <ul class="project-list lists">
                     <li class="project-item">
                         <a href="" class="links">
                             <div class="project-top-wrap">
-                                <img src="./images/project1.jpg" 
+                                <img src="./images/project1.jpg"
+                                    class="project-img"
                                     alt="Технокряк" 
                                     width="370" 
                                 />
@@ -103,7 +104,8 @@
                     <li class="project-item">
                         <a href="" class="links">
                             <div class="project-top-wrap">
-                                <img src="./images/project2.jpg" 
+                                <img src="./images/project2.jpg"
+                                class="project-img" 
                                 alt="Постер New Orlean vs Golden Star" 
                                 width="370" 
                                 />
@@ -123,7 +125,8 @@
                     <li class="project-item">
                         <a href="" class="links">
                             <div class="project-top-wrap">
-                                <img src="./images/project3.jpg" 
+                                <img src="./images/project3.jpg"
+                                class="project-img" 
                                 alt="Ресторан Seafood" 
                                 width="370" 
                                 />
@@ -143,7 +146,8 @@
                     <li class="project-item">
                         <a href="" class="links">
                             <div class="project-top-wrap">
-                                <img src="./images/project4.jpg" 
+                                <img src="./images/project4.jpg"
+                                class="project-img" 
                                 alt="Проект Prime" 
                                 width="370" 
                                 />
@@ -163,7 +167,8 @@
                     <li class="project-item">
                         <a href="" class="links">
                             <div class="project-top-wrap">
-                                <img src="./images/project5.jpg" 
+                                <img src="./images/project5.jpg"
+                                class="project-img" 
                                 alt="Проект Boxes" 
                                 width="370" 
                                 />
@@ -183,7 +188,8 @@
                     <li class="project-item">
                         <a href="" class="links">
                             <div class="project-top-wrap">
-                                <img src="./images/project6.jpg" 
+                                <img src="./images/project6.jpg"
+                                class="project-img" 
                                 alt="Inspiration has no Borders" 
                                 width="370" 
                                 />
@@ -203,7 +209,8 @@
                     <li class="project-item">
                         <a href="" class="links">
                             <div class="project-top-wrap">
-                                <img src="./images/project7.jpg" 
+                                <img src="./images/project7.jpg"
+                                class="project-img" 
                                     alt="Издание Limited Edition" 
                                     width="370" 
                                 />
@@ -223,7 +230,8 @@
                     <li class="project-item">
                         <a href="" class="links">
                             <div class="project-top-wrap">
-                                <img src="./images/project8.jpg" 
+                                <img src="./images/project8.jpg"
+                                class="project-img" 
                                 alt="Проект LAB" 
                                 width="370" 
                                 />
@@ -243,7 +251,8 @@
                     <li class="project-item">
                         <a href="" class="links">
                             <div class="project-top-wrap">
-                                <img src="./images/project9.jpg" 
+                                <img src="./images/project9.jpg"
+                                class="project-img" 
                                 alt="Growing Business" 
                                 width="370" 
                                 />
@@ -266,30 +275,30 @@
     </main>
 
     <!-- =========== Блок ПОДВАЛ  ФУТЕР (footer) =========== -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container flex">
     
             <div class="footer__address">
-                <!-- footers-addresses -->
+                
     
                 <a href="./index.html" class="logo footers__logo links">Web<span
                         class="logo__left logo__left--light">Studio</span></a>
     
-                <!-- ============== Блок АДРЕС (addresses) ============== -->
+                
                 <address>
     
                     <ul class="footer__address-list lists">
                         <li class="footer__address-item"><a href="" class="footer__address-link links">г. Киев, пр-т Леси
-                                Украинки, 26</a></li> <!-- addresses links -->
+                                Украинки, 26</a></li> 
                         <li class="footer__address-item"><a href="mailto:info@devstudio.com"
-                                class="footer__contact-link links">info@devstudio.com</a></li> <!-- footers-contact-link -->
+                                class="footer__contact-link links">info@devstudio.com</a></li>
                         <li class="footer__address-item"><a href="tel:+380961111111" class="footer__contact-link links">+38
                                 096 111 11 11</a></li>
                     </ul>
     
                 </address>
             </div>
-            <!-- ============== Блок СОЦ СЕТИ (footer__soc) ============== -->
+            
             <div class="footer__soc">
     
                 <p class="footer__soc-titles">Присоединяйтесь</p>
@@ -330,7 +339,7 @@
     
             </div>
     
-            <!-- ============== Блок ПОПИСКА НА РАССЫЛКУ (footer__subscr) ============== -->
+            
             <div class="footer__subscr">
                 <form>
                     <label for="users-email" class="footer__soc-titles">Подпишитесь на рассылку</label>
@@ -346,7 +355,7 @@
             </div>
     
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 

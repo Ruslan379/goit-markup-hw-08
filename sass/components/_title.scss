@@ -2,13 +2,18 @@
  и в Блок-секция_4 Наша команда (team) === */
  
 .section-titles {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     text-align: center;
 
-    @include font(700, 36px, 1.67, null);
+    // @include font(700, 36px, 1.67, null);
 
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.67;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        }
 }

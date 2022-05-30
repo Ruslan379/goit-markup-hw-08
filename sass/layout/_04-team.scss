@@ -21,8 +21,10 @@
     }
 }
 
-/* ======= Цвет фона карточки члена команды (team__item) ======= */
+/* ======= Стилизация карточки члена команды (team__item) ======= */
 .team__item {
+    padding-bottom: 24px;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -42,13 +44,13 @@
             margin-left: 30px;
         }
 }
-/* === Стилизация Заголовка h2 в Блок-секция_4 Наша команда (team) 
-вынесен в Типографику === */
 
-.team__img {
-    min-width: 100%;
-    height: auto;
-}
+
+// !=== Стилизация Заголовка h2 в Блок-секция_4 Наша команда (team) вынесен в Типографику ===
+
+
+
+
 
 /* ======= Заголовок h3 в Наша команда (team__item) > (team__name)  ======*/
 .team__name {
@@ -71,7 +73,7 @@
     line-height: 1.19;
     text-align: center;
 
-    color: #757575;
+    color: var(--color-font-head);
 }
 
 
@@ -89,7 +91,7 @@
     height: 44px;
 }
 
-/* .team-soc-item+.team-soc-item {
+/* .team-soc-item +.team-soc-item {
         margin-left: 10px;
     } */
 
@@ -105,9 +107,6 @@
 
     border-radius: 50%;
 
-    /* background-size: contain; */
-    /* background-color: rgb(242, 250, 171); */
-
     fill: var(--color-border-clients);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -119,15 +118,6 @@
         }
 
 }
-
-// ----------------------------------------------------------
-// .team__soc-link:hover,
-// .team__soc-link:focus {
-//     background-color: var(--color-logo-links-hover);
-//     fill: var(--color-light);
-// }
-// ____________________________________________________________
-
 
 
 /* _________ К О Н Е Ц Стилизация Ссылки-линки на соцсети в Наша команда  _________ */
