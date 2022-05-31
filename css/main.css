@@ -434,37 +434,36 @@ body.modal-open {
 /* ======================= Геометрия (header) ======================= */
 .header {
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   /* Установим стили нинжней рамки */
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--color-border-line);
 }
+
 @media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
   .header .header__list,
 .header .header__contacts-list {
     display: none;
   }
-}
 
-@media screen and (max-width: 767px) {
+  .container.flex-center {
+    position: relative;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
   .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
-
-.container.flex-center {
-  position: relative;
-}
-@media screen and (max-width: 767px) {
-  .container.flex-center {
-    justify-content: space-between;
-    width: 100vw;
-  }
-}
-
 /* ============== Кнопка-МЕНЮ (header) ============== */
 .header__menu-button {
   display: flex;
@@ -562,6 +561,7 @@ body.modal-open {
   display: flex;
   margin-left: auto;
   align-items: center;
+  margin-left: auto;
 }
 .header__contacts-list .header__item + .header__item {
   margin-left: 50px;
@@ -583,7 +583,8 @@ body.modal-open {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
-.header__contacts-link .header__icon {
+.header__contacts-link .header__icon-mail,
+.header__contacts-link .header__icon-tel {
   margin-right: 10px;
 }
 .header__contacts-link:hover, .header__contacts-link:focus {
@@ -591,10 +592,36 @@ body.modal-open {
   fill: var(--color-logo-links-hover);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+
+  .header__icon-tel {
+    width: 10px;
+    height: 14px;
+  }
+
+  .header__contacts-link {
+    font-size: 12px;
+  }
+
+  .header__contacts-list {
+    flex-direction: column;
+    margin-right: 15px;
+  }
+  .header__contacts-list .header__item + .header__item {
+    margin-top: 10px;
+    margin-left: -10px;
+  }
+
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
 /* _____________________________  К О Н Е Ц   (header) _____________________________ */
-/* ==== Выделение цветом активной страници в header в (headline) ===== */
-/* ================== Подчёркивание ссылки текущей страницы ==================*/
-/* ====  Hover & Focus на ссылках и Контактах (почта и телефон) в header === */
 /* ============ Стилизация Секции (hero) в ГЕРОЙ  ============ */
 .hero {
   padding-top: 118px;
