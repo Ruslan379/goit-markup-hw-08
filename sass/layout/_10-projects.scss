@@ -1,8 +1,10 @@
+/* =========== Стилизация секции ГЕРОЙ-ПОРТФОЛИО (projects) в portfolio.html =========== */
+
 /* ========== Стилизация кнопок в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html ==========*/
 .btn-filters {
     display: inline-block;
     padding: 6px 22px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     font-family: inherit;
     font-weight: 500;
@@ -36,20 +38,6 @@
 /* ____________  К О Н Е Ц кнопки в ГЕРОЙ-ССЫЛКИ в portfolio.html ______________________ */
 
 
-// ====================== Установка паддингов секции для трех версий ====================
-.section--change-padding {
-    padding-top: 40px;
-    
-        @media screen and (min-width: $tablet) {
-            padding-top: 30px;
-            
-
-        }@media screen and (min-width: $desktop) {
-            padding-top: 50px;
-            padding-bottom: 94px;
-        }
-}
-
 
 /* == Выделение цветом активной кнопки в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html === */
 .btn-filters.activlink {
@@ -59,9 +47,36 @@
 /* ____________  К О Н Е Ц кнопки в ГЕРОЙ-ССЫЛКИ в portfolio.html ______________________ */
 
 
-/* =========== Стилизация секции ГЕРОЙ-ПОРТФОЛИО (projects) в portfolio.html =========== */
 
-/* ==== flex-контейнер для кнопок в ГЕРОЙ-ССЫЛКИ (filters-list) ===== */
+
+/* ==== flex-контейнер и геометрия кнопок в ГЕРОЙ-ССЫЛКИ (filters-list) ===== */
+.filters-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: -15px;
+
+    margin-left: -8px;
+    margin-bottom: 40px;
+
+        .filters-item {
+            margin-left: 8px;
+            margin-top: 15px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+}
+
 
 
 /* ==== flex-контейнер в Секции ГЕРОЙ-ССЫЛКИ (filters) 2 вариант ===== */
@@ -134,9 +149,6 @@
         }
 }
 
-// .project-item:hover .project-top-text {
-//     transform: translateY(0);
-// }
 
 /* ____________________________________________________________________
 
@@ -153,19 +165,20 @@
     
 } */
 /* ____________________________________________________________________ */
+
+
+// !========== "Резиновый контент в нижней части карточки проекта" =========
 .project-link {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-
-/* =========== Нижняя рамка в карточке (project-card) =========== */
+// ================ Нижняя рамка в карточке (project-card) ================
 .project-card {
     flex-grow: 1;
-    
+// !__________________________________________________________________________
     padding: 20px 24px;
-
     /* Установит стили правой рамки */
     border-right-width: 1px;
     border-right-style: solid;

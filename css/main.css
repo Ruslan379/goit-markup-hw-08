@@ -1031,11 +1031,11 @@ body.modal-open {
 }
 
 /* ____________________________  К О Н Е Ц  footer ______________________________________ */
+/* =========== Стилизация секции ГЕРОЙ-ПОРТФОЛИО (projects) в portfolio.html =========== */
 /* ========== Стилизация кнопок в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html ==========*/
 .btn-filters {
   display: inline-block;
   padding: 6px 22px;
-  margin-bottom: 50px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -1056,21 +1056,6 @@ body.modal-open {
 }
 
 /* ____________  К О Н Е Ц кнопки в ГЕРОЙ-ССЫЛКИ в portfolio.html ______________________ */
-.section--change-padding {
-  padding-top: 40px;
-}
-@media screen and (min-width: 768px) {
-  .section--change-padding {
-    padding-top: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section--change-padding {
-    padding-top: 50px;
-    padding-bottom: 94px;
-  }
-}
-
 /* == Выделение цветом активной кнопки в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html === */
 .btn-filters.activlink {
   background-color: var(--color-button-hover);
@@ -1078,8 +1063,33 @@ body.modal-open {
 }
 
 /* ____________  К О Н Е Ц кнопки в ГЕРОЙ-ССЫЛКИ в portfolio.html ______________________ */
-/* =========== Стилизация секции ГЕРОЙ-ПОРТФОЛИО (projects) в portfolio.html =========== */
-/* ==== flex-контейнер для кнопок в ГЕРОЙ-ССЫЛКИ (filters-list) ===== */
+/* ==== flex-контейнер и геометрия кнопок в ГЕРОЙ-ССЫЛКИ (filters-list) ===== */
+.filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-left: -8px;
+  margin-bottom: 40px;
+}
+.filters-list .filters-item {
+  margin-left: 8px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .filters-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
 /* ==== flex-контейнер в Секции ГЕРОЙ-ССЫЛКИ (filters) 2 вариант ===== */
 @media screen and (min-width: 768px) {
   .project-list {
@@ -1158,7 +1168,6 @@ body.modal-open {
   height: 100%;
 }
 
-/* =========== Нижняя рамка в карточке (project-card) =========== */
 .project-card {
   flex-grow: 1;
   padding: 20px 24px;
