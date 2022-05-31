@@ -8,7 +8,7 @@
 .team__list {
     @extend %lists;
 
-    text-align: center;
+    // text-align: center;
 
     @media screen and (min-width: $tablet) {
         display: flex;
