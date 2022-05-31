@@ -42,7 +42,7 @@ p {
 /* =================== Отзывчивые изображения img =================== */
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -799,6 +799,9 @@ body.modal-open {
 }
 
 /* ==== flex-контейнер в Секции Секции Наша команда (team) ===== */
+.team__list {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;

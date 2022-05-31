@@ -14,7 +14,8 @@ p {
 /* =================== Отзывчивые изображения img =================== */
 img {
     display: block;
-    min-width: 100%;
+    max-width: 100%;
+    // min-width: 100%;
     height: auto;
 }
 
