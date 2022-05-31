@@ -2,7 +2,6 @@
 
 /* ======================= Геометрия (header) ======================= */
 .header {
-    position: relative;
     padding-top: 24px;
     padding-bottom: 25px;
 
@@ -22,21 +21,19 @@
 .logo {
     @media screen and (max-width: 767px) {
         display: flex;
-        // justify-content: space-between;
+        justify-content: space-between;
         align-items: center;
-        // margin-right: 276px;
     }
 }
 
-.header .container.flex-center {
-    @media screen and (max-width: 767px) {
+.container.flex-center {
+    position: relative;
+
+        @media screen and (max-width: 767px) {
         justify-content: space-between;
-            width: 100vw;
-            margin-left: 0;
-            margin-right: 0;
-            padding-left: 15px;
-            padding-right: 15px;
-            }
+        width: 100vw;
+        
+        }
         
     }
 // !______________________________________________________
@@ -51,6 +48,8 @@
     border: none;
     background-color: transparent;
 
+    margin-right: 23px;         
+
         @media screen and (min-width: 768px) {
             display: none;
         }
@@ -62,7 +61,6 @@
 
         &.is-open .header__icon-close {
             display: block; 
-            // z-index: 7;
         }
 
         &.is-open .header__icon-menu {
@@ -76,13 +74,13 @@
 //     background-color: tomato;
 // }
 
-.header__menu-button2 {
+.header__icon-close {
     // position: absolute;
-    // position: fixed;
+    position: fixed;
     // top: 100%;
-    // top: 10px;
-    // left: 15px;
-    // width: 100%;
+    top: 10px;
+    left: 15px;
+    width: 100%;
 
     // top: 0;
     // left: 0;

@@ -19,14 +19,15 @@ body.modal-open {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
     }
 }
 
 
-.team__img {
+.team__img,
+.project-img {
     min-width: 100%;
     height: auto;
 }
