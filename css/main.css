@@ -444,7 +444,7 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .container.flex-center {
     position: relative;
-    justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
 
@@ -460,31 +460,23 @@ body.modal-open {
 
   .logo {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
-/* ============== Кнопка-МЕНЮ (header) ============== */
-.header__menu-button {
+/* ============== Кнопка-МЕНЮ-ОТКРЫТЬ (menu-open-btn) ============== */
+.menu-open-btn {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-left: auto;
   border: none;
   background-color: transparent;
-  margin-right: 23px;
 }
 @media screen and (min-width: 768px) {
-  .header__menu-button {
+  .menu-open-btn {
     display: none;
   }
 }
-.header__menu-button .header__icon-close {
-  display: none;
-}
-.header__menu-button.is-open .header__icon-close {
-  display: block;
-}
-.header__menu-button.is-open .header__icon-menu {
+.menu-open-btn.is-open .header__icon-menu {
   display: none;
 }
 

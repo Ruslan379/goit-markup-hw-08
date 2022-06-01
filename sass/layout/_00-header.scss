@@ -23,7 +23,8 @@
 @media screen and (max-width: 767px) {
     .container.flex-center {
             position: relative;
-            justify-content: space-between;
+            // justify-content: space-between;
+            align-items: center;
             // width: 100vw; // !содает горизонтальный scroll
             width: 100%;
             
@@ -39,12 +40,10 @@
         display: none;
     }
 
-    
-
     .logo {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        // justify-content: space-between;
+        // align-items: center;
     }
 }
 // !______________________________________________________
@@ -62,29 +61,32 @@
 
 
 
-/* ============== Кнопка-МЕНЮ (header) ============== */
-.header__menu-button {
+/* ============== Кнопка-МЕНЮ-ОТКРЫТЬ (menu-open-btn) ============== */
+.menu-open-btn {
     // display: inline-flex;
     display: flex;
+
     margin: 0;
     padding: 0;
+    margin-left: auto;
+
     border: none;
     background-color: transparent;
+    
 
-    margin-right: 23px;         
 
         @media screen and (min-width: 768px) {
             display: none;
         }
 
-        .header__icon-close {
-            display: none;
+        // .header__icon-close {
+        //     display: none;
             
-        }
+        // }
 
-        &.is-open .header__icon-close {
-            display: block; 
-        }
+        // &.is-open .header__icon-close {
+        //     display: block; 
+        // }
 
         &.is-open .header__icon-menu {
             display: none;
@@ -97,7 +99,7 @@
 //     background-color: tomato;
 // }
 
-.header__icon-close {
+.header__icon-close { //! пока не надо
     // position: absolute;
     position: fixed;
     // top: 100%;
@@ -137,15 +139,6 @@
     //     z-index: 1;
     // }
 }
-
-// .header__menu-container.is-open .header__icon-close {
-//     display: block;
-//     z-index: 1;
-// }
-
-
-
-
 
 
 
