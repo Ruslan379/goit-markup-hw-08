@@ -68,7 +68,6 @@
                 aria-controls="menu-container" 
                 data-menu-button
             >
-                    
                 <svg 
                     width="40" 
                     height="40" 
@@ -80,16 +79,31 @@
             </button>
             
 
-            <div class="header__menu-container" id="menu-container" data-menu>
-                <p>Контент меню</p>
-                <button type="button" 
-                class="menu-open-btn1" 
-                aria-expanded="false" 
-                aria-controls="menu-container" 
-                data-menu-button>
-                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use class="header__icon-close" href="./images/icons.svg#icon-close"></use>
-                    </svg>
+            <div class="header__mob-menu" id="menu-container" data-menu>
+                
+                <div class="container">
+                
+                    <div class="header__mob-menu-top">
+
+                        <button type="button" 
+                            class="menu-close-btn" 
+                            aria-expanded="false" 
+                            aria-controls="menu-container" 
+                            data-menu-button>
+                                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                    <use class="header__icon-close" href="./images/icons.svg#icon-close"></use>
+                                </svg>
+                            
+                        <p>Контент меню</p>
+
+                    </div>
+
+                    <div class="header__mob-menu-bottom">
+
+                    </div>
+                    
+                </div>
+
             </div>
         </div>
     </header>
