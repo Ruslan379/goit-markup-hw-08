@@ -120,12 +120,12 @@
 .mob-menu-top__link {
     display: inline-block;
 
+    margin-bottom: 32px;
+
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-
-    margin-bottom: 32px;
 
     color: inherit;
 
@@ -152,21 +152,18 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .header__icon-mail,
-    .header__icon-tel {
-        margin-right: 10px;
-    }
 
     &:hover,
     &:focus {
         color: var(--color-logo-links-hover);
-        fill: var(--color-logo-links-hover);
     }
 }
 
 /* ========= Стилизация Контакты (почта) МЕНЮ-bottom (mob-menu-top__link) ========= */
 .mob-menu-bottom__mail-link {
     display: inline-block;
+
+    margin-bottom: 64px;
 
     font-size: 24px;
     font-weight: 500;
@@ -180,12 +177,32 @@
     &:hover,
     &:focus {
         color: var(--color-logo-links-hover);
-        fill: var(--color-logo-links-hover);
     }
 }
 
 
+/* ========= Стилизация МЕНЮ-bottom Сылки на соцсети (mob-soc-list) ========= */
+.mob-soc-list {
+    display: flex;
+}
 
+.mob-soc-list__link {
+    margin-right: 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: var(--color-logo-links-hover);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--color-dark);
+    }
+}
 
 
 

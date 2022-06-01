@@ -493,11 +493,11 @@ body {
 /* ======== Стилизация Мобилное МЕНЮ-top (mob-menu-top__link) ========= */
 .mob-menu-top__link {
   display: inline-block;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
   color: inherit;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -516,18 +516,14 @@ body {
   color: var(--color-font-head);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mob-menu-bottom__tel-link .header__icon-mail,
-.mob-menu-bottom__tel-link .header__icon-tel {
-  margin-right: 10px;
-}
 .mob-menu-bottom__tel-link:hover, .mob-menu-bottom__tel-link:focus {
   color: var(--color-logo-links-hover);
-  fill: var(--color-logo-links-hover);
 }
 
 /* ========= Стилизация Контакты (почта) МЕНЮ-bottom (mob-menu-top__link) ========= */
 .mob-menu-bottom__mail-link {
   display: inline-block;
+  margin-bottom: 64px;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
@@ -537,7 +533,24 @@ body {
 }
 .mob-menu-bottom__mail-link:hover, .mob-menu-bottom__mail-link:focus {
   color: var(--color-logo-links-hover);
-  fill: var(--color-logo-links-hover);
+}
+
+/* ========= Стилизация МЕНЮ-bottom Сылки на соцсети (mob-soc-list) ========= */
+.mob-soc-list {
+  display: flex;
+}
+
+.mob-soc-list__link {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--color-logo-links-hover);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-soc-list__link:hover, .mob-soc-list__link:focus {
+  color: var(--color-dark);
 }
 
 /* ======================= Стилизация (logo) ======================= */
