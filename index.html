@@ -73,7 +73,6 @@
                     height="40" 
                     aria-label="Переключатель мобильного меню"
                     >
-                        <!-- <use class="header__icon-close" href="./images/icons.svg#icon-close"></use> -->
                         <use class="header__icon-menu" href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
@@ -83,7 +82,7 @@
                 
                 <div class="container">
                 
-                    <div class="header__mob-menu-top">
+                    <div class="mob-menu-top">
 
                         <button type="button" 
                             class="menu-close-btn" 
@@ -93,15 +92,54 @@
                                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                                     <use class="header__icon-close" href="./images/icons.svg#icon-close"></use>
                                 </svg>
+                        </button>
                             
-                        <p>Контент меню</p>
+                        <ul class="mob-menu-top__list lists">
+                            <li class="mob-menu-top__item"><a href="./index.html" class="mob-menu-top__link links activlink1">Студия</a></li>
+                            <li class="mob-menu-top__item"><a href="./portfolio.html" class="mob-menu-top__link links">Портфолио</a></li>
+                            <li class="mob-menu-top__item"><a href="" class="mob-menu-top__link links">Контакты</a></li>
+                        </ul>
 
                     </div>
 
-                    <div class="header__mob-menu-bottom">
+                    <div class="mob-menu-bottom">
+
+                        <ul class="mob-menu-bottom__list lists">
+                            <li class="mob-menu-bottom__item">
+                                <a href="mailto:info@devstudio.com" class="mob-menu-bottom__link links">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        
+                            <li class="mob-menu-bottom__item">
+                                <a href="tel:+380961111111" class="mob-menu-bottom__link links">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="header__mob-soc-list lists">
+                        
+                            <li class="mob-soc-list__item">
+                                <a href="" target="_blank" class="mob-soc-list__link links">Instagram</a>
+                            </li>
+                        
+                            <li class="mob-soc-list__item">
+                                <a href="" target="_blank" class="mob-soc-list__link links">Twitter</a>
+                            </li>
+
+                            <li class="mob-soc-list__item">
+                                <a href="" target="_blank" class="mob-soc-list__link links">Facebook</a>
+                            </li>
+
+                            <li class="header__mob-soc-list__item">
+                                <a href="" target="_blank" class="mob-soc-list__link links">LinkedIn</a>
+                            </li>
+                        
+                        </ul>
 
                     </div>
-                    
+
                 </div>
 
             </div>
