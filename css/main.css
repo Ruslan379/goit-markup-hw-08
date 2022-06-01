@@ -1131,6 +1131,79 @@ body {
   fill: var(--color-light);
 }
 
+@media screen and (max-width: 767px) {
+  .footer .container,
+.footer__address,
+.footer__address-list,
+.footer__soc,
+.footer__subscr,
+.footer__soc-titles,
+.footer__field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footers__logo {
+    margin-bottom: 20px;
+  }
+
+  /* Применить margin-bottom: 9px ко всем элементам с классом footer__address-item,
+  кроме последнего */
+  .footer__address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .footer__address-list {
+    margin-bottom: 60px;
+  }
+
+  /* ==================== Стилизация Блока СОЦ СЕТИ (footer__soc) ==================== */
+  .footer__soc {
+    min-width: 206px;
+    margin-bottom: 60px;
+    margin-top: 0px;
+    margin-left: 0;
+  }
+
+  .footer__soc-list {
+    width: 100%;
+  }
+
+  /* ======== Ститлизация текста в Блоке СОЦ СЕТИ (footer__soc) ========== */
+  .footer__soc-titles {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--color-light);
+  }
+
+  /* ======================== Стилизация формы ПОДПИСАТЬСЯ ======================== */
+  .footer__subscr {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .footer__field--margin {
+    margin-top: 0;
+  }
+
+  .footer__subscr {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .footer__input {
+    width: 280px;
+    height: 50px;
+  }
+
+  .footer__btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
 /* ____________________________  К О Н Е Ц  footer ______________________________________ */
 /* =========== Стилизация секции ГЕРОЙ-ПОРТФОЛИО (projects) в portfolio.html =========== */
 /* ========== Стилизация кнопок в ГЕРОЙ-ССЫЛКИ в (btn-filters) в portfolio.html ==========*/

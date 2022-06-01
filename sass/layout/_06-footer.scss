@@ -11,6 +11,7 @@
 }
 
 
+
 /* == Замена цвета текста WebStudio (часть Studio - на белую) в footer == */
 .logo__left--light {
     color: var(--color-light);
@@ -21,6 +22,12 @@
     /* display: inline-block; */
     margin-bottom: 20px;
 }
+
+
+
+
+
+
 
 
 /* ============= Стилизация АДРЕС в footer ============= */
@@ -187,5 +194,104 @@
 
     fill: var(--color-light);
 }
+
+// !========= Медиа-правила до ширины 767px ==========
+@media screen and (max-width: 767px) {
+    .footer .container,
+    .footer__address,
+    .footer__address-list,
+    .footer__soc,
+    .footer__subscr,
+    .footer__soc-titles,
+    .footer__field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footers__logo {
+        margin-bottom: 20px;
+    }
+    
+
+    /* Применить margin-bottom: 9px ко всем элементам с классом footer__address-item,
+    кроме последнего */
+    .footer__address-item:not(:last-child) {
+    margin-bottom: 9px;
+    }
+
+    .footer__address-list {
+        margin-bottom: 60px;
+    }
+    /* ==================== Стилизация Блока СОЦ СЕТИ (footer__soc) ==================== */
+    .footer__soc {
+        min-width: 206px;
+        // max-width: 420px;  //! включить для отзывчивости
+        // width: 100%;  //! включить для отзывчивости
+        // padding-right: 30px;   //! включить для отзывчивости
+        // padding-left: 30px; //! включить для отзывчивости
+        
+        margin-bottom: 60px;
+        margin-top: 0px;
+        margin-left: 0;
+    }
+
+    .footer__soc-list {
+        // min-width: 206px; //! включить для отзывчивости
+        width: 100%;
+    }
+
+    /* ======== Ститлизация текста в Блоке СОЦ СЕТИ (footer__soc) ========== */
+    .footer__soc-titles {
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+
+        color: var(--color-light);
+    }
+
+
+/* ======================== Стилизация формы ПОДПИСАТЬСЯ ======================== */
+    .footer__subscr {
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .footer__field--margin {
+        margin-top: 0;
+    }
+
+// ! ++++++++++ ?????? ++++++++++++++
+        .footer__subscr {
+        margin-left: 0;
+        padding-top: 0;
+
+
+        // min-width: 290px;
+        // max-width: 448px;
+
+        // width: 100%;  //! включить для отзывчивости
+        // padding-right: 30px;   //! включить для отзывчивости
+        // padding-left: 30px; //! включить для отзывчивости
+    }
+
+    .footer__input {
+        width: 280px; 
+        // width: 100%; //! ????????????????????
+        height: 50px;
+    }
+
+
+
+    .footer__btn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+// !++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 /* ____________________________  К О Н Е Ц  footer ______________________________________ */
