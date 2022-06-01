@@ -999,7 +999,6 @@ body {
 }
 
 /* =============================== Стилизация footer =============================== */
-/* ==== flex-контейнер в footer (container flex) ===== */
 /* ================ Цвет фона в footer ================ */
 .footer {
   padding-top: 60px;
@@ -1085,14 +1084,10 @@ body {
 .footer__subscr {
   margin-left: 93px;
   padding-top: 12px;
-  /* УБРАТЬ */
-  /* outline: 2px solid tomato;  */
-  /* background-color: tomato; */
 }
 
 .footer__field--margin {
   margin-top: 15px;
-  /* outline: 2px solid rgb(71, 58, 250); */
 }
 
 .footer__input {
@@ -1114,8 +1109,6 @@ body {
   color: var(--color-font-footer);
 }
 
-/* +++++++++++ Стили ПЛЕЙСХОЛДЕРА +++++++++++ */
-/* +++++++++++++++++++++++++++++++++ */
 .footer__btn {
   position: relative;
   display: flex;
@@ -1195,13 +1188,82 @@ body {
   }
 
   .footer__input {
-    width: 280px;
+    width: 400px;
     height: 50px;
   }
 
   .footer__btn {
     margin-left: 0;
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 232px;
+    width: 100%;
+  }
+
+  .footer__address-tab {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .footer__field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footers__logo {
+    margin-bottom: 20px;
+  }
+
+  .footer__address-list {
+    text-align: center;
+  }
+
+  .footer__soc {
+    padding: 0;
+    margin-right: 89px;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .footer__subscr {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer__address-tab {
+    margin-bottom: 60px;
+  }
+
+  .footer__address {
+    margin-left: 76px;
+  }
+
+  .footer__btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address-tab {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
   }
 }
 /* ____________________________  К О Н Е Ц  footer ______________________________________ */
