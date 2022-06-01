@@ -442,6 +442,12 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
+  .container.flex-center {
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -450,12 +456,6 @@ body.modal-open {
   .header .header__list,
 .header .header__contacts-list {
     display: none;
-  }
-
-  .container.flex-center {
-    position: relative;
-    justify-content: space-between;
-    width: 100vw;
   }
 
   .logo {
@@ -593,6 +593,12 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container.flex-center {
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .header__icon-mail {
     width: 14px;
     height: 10px;
@@ -610,6 +616,7 @@ body.modal-open {
   .header__contacts-list {
     flex-direction: column;
     margin-right: 15px;
+    margin-left: auto;
   }
   .header__contacts-list .header__item + .header__item {
     margin-top: 10px;

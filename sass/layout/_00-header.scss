@@ -21,7 +21,14 @@
 
 // !========= Медиа-правила до ширины 768px ==========
 @media screen and (max-width: 767px) {
-    
+    .container.flex-center {
+            position: relative;
+            justify-content: space-between;
+            // width: 100vw; // !содает горизонтальный scroll
+            width: 100%;
+            
+        }
+
     .header {
         padding-top: 16px;
         padding-bottom: 16px;
@@ -32,11 +39,7 @@
         display: none;
     }
 
-    .container.flex-center {
-        position: relative;
-        justify-content: space-between;
-        width: 100vw;
-        }
+    
 
     .logo {
         display: flex;
@@ -259,6 +262,14 @@
 
 // !========= Медиа-правила от ширины 768px  и до  1199 px  ==========
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    .container.flex-center {
+            position: relative;
+            justify-content: space-between;
+            // width: 100vw; // !содает горизонтальный scroll
+            width: 100%;
+        }
+    
+    
     .header__icon-mail {
         width: 14px;
         height: 10px;
@@ -276,7 +287,7 @@
     .header__contacts-list {
         flex-direction: column;
         margin-right: 15px;
-        // margin-left: auto;
+        margin-left: auto;
 
         .header__item+.header__item {
             margin-top: 10px;
