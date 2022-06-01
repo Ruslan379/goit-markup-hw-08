@@ -9,10 +9,20 @@ body {
 }
 
 
-/* ============ Для отсутствия скрола контента на Модалке  ============ */
-body.modal-open {
-    // overflow: hidden;
+// !============ Для отсутствия скрола контента на Модалке  ============ 
+// Этот от Репеты:
+
+// body.modal-open {
+//     overflow: hidden;
+// }
+
+
+// Этот от Андрея:
+.no-scroll {
+    overflow: hidden;
 }
+// !_____________________________________________________________________
+
 
 
 .section {
@@ -25,3 +35,8 @@ body.modal-open {
     }
 }
 
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}

@@ -59,42 +59,54 @@
                 </li>
             </ul>
 
+            <!-- !========== Кнопка ОТКРЫТЬ МЕНЮ ========== -->
             <button 
                 type="button" 
-                class="menu-open-btn" 
-                aria-expanded="false" 
-                aria-controls="menu-container" 
-                data-menu-button
-            >
+                class="menu-open-btn">
                 <svg 
                     width="40" 
                     height="40" 
-                    aria-label="Переключатель мобильного меню"
-                    >
-                        <use class="header__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    aria-label="Переключатель мобильного меню">
+                        <use 
+                            class="header__icon-menu" 
+                            href="./images/icons.svg#icon-menu">
+                        </use>
                 </svg>
             </button>
 
+            <!-- aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button -->
+
             <!-- !___________________ mob-menu ____________________ -->
-            <div class="header__mob-menu" id="menu-container" data-menu>
+            <div class="header__mob-menu is-hidden">
                 
                 <div class="container">
                         
                     <!-- !============= 1-top ============= -->
                     <div class="mob-menu-top">
-                        
-                        <button type="button" 
-                            class="menu-close-btn" 
-                            aria-expanded="false" 
-                            aria-controls="menu-container" 
-                            data-menu-button>
-                                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                                    <use class="header__icon-close" href="./images/icons.svg#icon-close"></use>
+
+                        <!-- !========== Кнопка ЗАКРЫТЬ МЕНЮ ========== -->
+                        <button 
+                            type="button" 
+                            class="menu-close-btn">
+                                <svg 
+                                width="40" 
+                                height="40" 
+                                aria-label="Переключатель мобильного меню">
+                                    <use 
+                                        class="header__icon-close" 
+                                        href="./images/icons.svg#icon-close">
+                                    </use>
                                 </svg>
                         </button>
+
+                        <!-- aria-expanded="false"
+                        aria-controls="menu-container"
+                        data-menu-button -->
                             
                         <ul class="mob-menu-top__list lists">
-                            <li class="mob-menu-top__item"><a href="./index.html" class="mob-menu-top__link links activlink1">Студия</a></li>
+                            <li class="mob-menu-top__item"><a href="./index.html" class="mob-menu-top__link links">Студия</a></li>
                             <li class="mob-menu-top__item"><a href="./portfolio.html" class="mob-menu-top__link links">Портфолио</a></li>
                             <li class="mob-menu-top__item"><a href="" class="mob-menu-top__link links">Контакты</a></li>
                         </ul>
@@ -692,7 +704,8 @@
     <script src="./js/modal.js"></script>
 
     <!-- ================== Скрипт js для МОБИЛЬНОГО МЕНЮ ======================= -->
-    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/menu.js"></script>
 
 </body>
 

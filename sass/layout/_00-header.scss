@@ -39,23 +39,14 @@
     .header .header__contacts-list {
         display: none;
     }
-
-    .logo {
-        // display: flex; //!
-        // justify-content: space-between;
-        // align-items: center;
-    }
 }
 // !______________________________________________________
 
 
 
-
+// !++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /* ============== Кнопка-МЕНЮ-ОТКРЫТЬ (menu-open-btn) ============== */
 .menu-open-btn {
-    // display: inline-flex;
-    // display: flex; //!
-
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -63,10 +54,10 @@
     border: none;
     background-color: transparent;
     
-
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 767px) {
             display: none;
         }
+        // ============ скрыть/закрыть от Репеты =========
 
         // .header__icon-close {
         //     display: none;
@@ -77,15 +68,10 @@
         //     display: block; 
         // }
 
-        &.is-open .header__icon-menu {
-            display: none;
-        }
-}
-
-/* ============== Кнопка-МЕНЮ-ЗАКРЫТЬ (menu-close-btn) ============== */
-.menu-close-btn {
-    // display: inline-flex;
-    // display: flex; //!
+        // &.is-open .header__icon-menu {
+        //     display: none;
+        // }
+        // ____________________________________________
 }
 
 
@@ -106,15 +92,32 @@
 
     background-color: var(--color-light);
     
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            overflow-y: auto;
+        }
 
-// !============ скрыть/закрыть =========
-    display: none;
+        // ============ скрыть/закрыть от Репеты =========
+        // display: none;
 
-    &.is-open {
-        display: block;
-    }
-// !____________________________________
+        //     &.is-open {
+        //         display: block;
+        //     }
+        // ____________________________________________
 }
+
+
+/* ============== Кнопка-МЕНЮ-ЗАКРЫТЬ (menu-close-btn) ============== */
+.menu-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    
+}
+
 
 /* ======== Стилизация Мобилное МЕНЮ-top (mob-menu-top__link) ========= */
 .mob-menu-top__link {
@@ -136,6 +139,7 @@
         color: var(--color-logo-links-hover);
     }
 }
+
 
 /* ========= Стилизация Контакты (телефон) МЕНЮ-bottom (mob-menu-top__link) ========= */
 .mob-menu-bottom__tel-link {
@@ -187,7 +191,7 @@
 }
 
 .mob-soc-list__link {
-    margin-right: 20px;
+    margin-left: 10px;
 
     font-size: 18px;
     font-weight: 500;
@@ -204,25 +208,20 @@
     }
 }
 
-
-
-
-
-
-
-// !----------------------------------------------------------------
-.header__icon-close { //! пока не надо
-    // position: absolute;
-    // position: fixed; //! пока не надо
-    // top: 100%;
-    // top: 10px; //! пока не надо
-    // left: 15px; //! пока не надо
-    // width: 100%; //! пока не надо
-
-    // top: 0;
-    // left: 0;
-    // width: 100%;
+// ============Установка разделов-рисочек в списке соцсетей=======
+.mob-soc-list__item:not(:last-child) {
+    
+    /* Установим стили правой рамки-рисочки */
+    padding-right: 10px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: var(--color-background-backdrop);
 }
+
+.mob-soc-list__item:first-child {
+    margin-left: -10px;
+}
+
 // !_________________________________________________________________________
 
 
@@ -231,7 +230,6 @@
 .logo__right--dark {
     color: var(--color-dark);
 }
-
 
 
 /* ======== Геометрия Ссылки-НАВИГАЦИЯ в header ========= */
@@ -337,13 +335,17 @@
 // !========= Медиа-правила от ширины 768px  и до  1199 px  ==========
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
     .container.flex-center {
-            position: relative;
-            justify-content: space-between;
-            // width: 100vw; // !содает горизонтальный scroll
-            width: 100%;
-        }
+        position: relative;
+        justify-content: space-between;
+        // width: 100vw; // !содает горизонтальный scroll
+        width: 100%;
+    }
     
-    
+    .header {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
     .header__icon-mail {
         width: 14px;
         height: 10px;
@@ -367,11 +369,6 @@
             margin-top: 10px;
             margin-left: -10px;
         }
-    }
-
-    .header {
-        padding-top: 21px;
-        padding-bottom: 21px;
     }
 }
 // !++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

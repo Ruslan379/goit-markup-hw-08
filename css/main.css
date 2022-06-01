@@ -75,7 +75,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* ============ Для отсутствия скрола контента на Модалке  ============ */
+.no-scroll {
+  overflow: hidden;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -85,6 +88,12 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 /* ================ Скрытие заголовков (visually-hidden) ================ */
@@ -462,16 +471,12 @@ body {
   border: none;
   background-color: transparent;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .menu-open-btn {
     display: none;
   }
 }
-.menu-open-btn.is-open .header__icon-menu {
-  display: none;
-}
 
-/* ============== Кнопка-МЕНЮ-ЗАКРЫТЬ (menu-close-btn) ============== */
 /* ================= Мобилное МЕНЮ (header__mob-menu) ================= */
 .header__mob-menu {
   position: fixed;
@@ -484,10 +489,20 @@ body {
   padding-bottom: 48px;
   padding-left: 40px;
   background-color: var(--color-light);
-  display: none;
 }
-.header__mob-menu.is-open {
-  display: block;
+.header__mob-menu .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* ============== Кнопка-МЕНЮ-ЗАКРЫТЬ (menu-close-btn) ============== */
+.menu-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 /* ======== Стилизация Мобилное МЕНЮ-top (mob-menu-top__link) ========= */
@@ -541,7 +556,7 @@ body {
 }
 
 .mob-soc-list__link {
-  margin-right: 20px;
+  margin-left: 10px;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.22;
@@ -551,6 +566,18 @@ body {
 }
 .mob-soc-list__link:hover, .mob-soc-list__link:focus {
   color: var(--color-dark);
+}
+
+.mob-soc-list__item:not(:last-child) {
+  /* Установим стили правой рамки-рисочки */
+  padding-right: 10px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--color-background-backdrop);
+}
+
+.mob-soc-list__item:first-child {
+  margin-left: -10px;
 }
 
 /* ======================= Стилизация (logo) ======================= */
@@ -639,6 +666,11 @@ body {
     width: 100%;
   }
 
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
   .header__icon-mail {
     width: 14px;
     height: 10px;
@@ -661,11 +693,6 @@ body {
   .header__contacts-list .header__item + .header__item {
     margin-top: 10px;
     margin-left: -10px;
-  }
-
-  .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 /* _____________________________  К О Н Е Ц   (header) _____________________________ */
