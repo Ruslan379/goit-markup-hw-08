@@ -490,7 +490,7 @@ body {
   display: block;
 }
 
-/* ======== Стилизация Мобилное МЕНЮ (header__mob-menu) ========= */
+/* ======== Стилизация Мобилное МЕНЮ-top (mob-menu-top__link) ========= */
 .mob-menu-top__link {
   display: inline-block;
   font-weight: 500;
@@ -503,30 +503,39 @@ body {
 }
 .mob-menu-top__link:hover, .mob-menu-top__link:focus {
   color: var(--color-logo-links-hover);
+}
+
+/* ========= Стилизация Контакты (телефон) МЕНЮ-bottom (mob-menu-top__link) ========= */
+.mob-menu-bottom__tel-link {
+  display: inline-block;
+  margin-bottom: 32px;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--color-font-head);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-bottom__tel-link .header__icon-mail,
+.mob-menu-bottom__tel-link .header__icon-tel {
+  margin-right: 10px;
+}
+.mob-menu-bottom__tel-link:hover, .mob-menu-bottom__tel-link:focus {
+  color: var(--color-logo-links-hover);
   fill: var(--color-logo-links-hover);
 }
 
-/* ========= Стилизация Контакты (почта и телефон) в header ========= */
-.header__contacts-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
+/* ========= Стилизация Контакты (почта) МЕНЮ-bottom (mob-menu-top__link) ========= */
+.mob-menu-bottom__mail-link {
+  display: inline-block;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--color-font-head);
-  fill: var(--color-font-head);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-property: color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__contacts-link .header__icon-mail,
-.header__contacts-link .header__icon-tel {
-  margin-right: 10px;
-}
-.header__contacts-link:hover, .header__contacts-link:focus {
+.mob-menu-bottom__mail-link:hover, .mob-menu-bottom__mail-link:focus {
   color: var(--color-logo-links-hover);
   fill: var(--color-logo-links-hover);
 }
