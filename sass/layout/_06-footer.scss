@@ -191,11 +191,6 @@
     }
     
 
-    /* Применить margin-bottom: 9px ко всем элементам с классом footer__address-item,
-    кроме последнего */
-    .footer__address-item:not(:last-child) {
-    margin-bottom: 9px;
-    }
 
     .footer__address-list {
         margin-bottom: 60px;
@@ -218,16 +213,6 @@
         width: 100%;
     }
 
-    /* ======== Ститлизация текста в Блоке СОЦ СЕТИ (footer__soc) ========== */
-    .footer__soc-titles {
-        margin-bottom: 20px;
-
-        font-weight: 700;
-        line-height: 1.14;
-        text-transform: uppercase;
-
-        color: var(--color-light);
-    }
 
 
 /* ======================== Стилизация формы ПОДПИСАТЬСЯ ======================== */
@@ -309,7 +294,7 @@
         align-items: center;
     }
 
-// !------------------------------------------------
+// !----------------------------
     .footers__logo {
         margin-bottom: 20px;
     }
@@ -335,13 +320,10 @@
 
     .footer__address-tab {
         margin-bottom: 60px;
-
-        // background-color: tomato;
     }
 
     .footer__address {
         margin-left: 76px;
-        
     }
 
     .footer__btn {

@@ -128,9 +128,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* УБРАТЬ */
-  /* outline: 2px solid tomato;  */
-  /* background-color: tomato; */
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -369,9 +366,6 @@ body {
   fill: #ffffff;
 }
 
-/* .modal-check:checked+.check-text .check-icon {
-    fill: #ffffff;
-} */
 .agreement {
   font-size: 12px;
   line-height: 1.17;
@@ -1181,12 +1175,6 @@ body {
     margin-bottom: 20px;
   }
 
-  /* Применить margin-bottom: 9px ко всем элементам с классом footer__address-item,
-  кроме последнего */
-  .footer__address-item:not(:last-child) {
-    margin-bottom: 9px;
-  }
-
   .footer__address-list {
     margin-bottom: 60px;
   }
@@ -1201,15 +1189,6 @@ body {
 
   .footer__soc-list {
     width: 100%;
-  }
-
-  /* ======== Ститлизация текста в Блоке СОЦ СЕТИ (footer__soc) ========== */
-  .footer__soc-titles {
-    margin-bottom: 20px;
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--color-light);
   }
 
   /* ======================== Стилизация формы ПОДПИСАТЬСЯ ======================== */

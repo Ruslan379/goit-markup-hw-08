@@ -1,7 +1,9 @@
 /* =====================  ОСНОВНОЙ Контейнер (container) ===================== */
 .container {
     // width: 1200px;
+    // min-width: 320px;
     width: 100%;
+    // width: 100vw;
     
     margin-left: auto;
     margin-right: auto;
@@ -20,10 +22,6 @@
         @media screen and (min-width: $desktop) {
             width: 1200px;
         }
-
-    /* УБРАТЬ */
-    /* outline: 2px solid tomato;  */
-    /* background-color: tomato; */
 }
 
 

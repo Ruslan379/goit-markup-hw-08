@@ -127,20 +127,6 @@
 }
 
 
-// ----------------------------------------------------------
-// .modal-input:focus+.modal-icon {
-//     fill: var(--color-logo-links-hover);
-// }
-// ___________________________________________________________
-
-// ----------------------------------------------------------
-// .modal-input:focus,
-// .modal-text:focus {
-//     border-color: var(--color-logo-links-hover);
-// }
-// ___________________________________________________________
-
-
 .modal-text {
     width: 100%;
     height: 120px;
@@ -173,15 +159,6 @@
         }
 }
 
-// /* +++++++++++ Стили ПЛЕЙСХОЛДЕРА +++++++++++ */
-// .modal-text::placeholder {
-
-//     line-height: 1.14;
-//     letter-spacing: 0.01em;
-
-//     color: var(--color-font-placeholder-modal);
-// }
-// ___________________________________________________________
 
 
 .modal-field:nth-child(-n + 3) {
@@ -242,19 +219,6 @@
             fill: #ffffff;
         }
 }
-
-// ----------------------------------------------------------
-// .modal-check:checked+.check-text .check-icon {
-//     background-color: var(--color-logo-links-hover);
-//     border: none;
-//     fill: #ffffff;
-// }
-// ___________________________________________________________
-
-/* .modal-check:checked+.check-text .check-icon {
-    fill: #ffffff;
-} */
-// ___________________________________________________________
 
 
 .agreement {
@@ -317,8 +281,3 @@
         }
 }
 
-// --------------------------------------------------
-// .button-modal:hover {
-//     fill: var(--color-logo-links-hover);
-// }
-// _____________________________________________________
