@@ -26,7 +26,7 @@
             // justify-content: space-between;
             align-items: center;
             // width: 100vw; // !содает горизонтальный scroll
-            width: 100%;
+            // width: 100%; //!+++++++ 02.06.
             
         }
 
@@ -51,8 +51,8 @@
     padding: 0;
     margin-left: auto;
 
-    border: none;
-    background-color: transparent;
+    // border: none; //!+++++++ 02.06.
+    // background-color: transparent; //!+++++++ 02.06.
     
         @media screen and (min-width: 767px) {
             display: none;
@@ -351,7 +351,7 @@
         position: relative;
         justify-content: space-between;
         // width: 100vw; // !содает горизонтальный scroll
-        width: 100%;
+        // width: 100%; //!+++++++ 02.06. 
     }
     
     .header {

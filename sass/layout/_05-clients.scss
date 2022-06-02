@@ -5,15 +5,19 @@
     @extend %lists;
     @extend %flex-wrap;
 
+    margin-left: -30px; //!+++++++ 02.06.
+    margin-bottom: -30px; //!+++++++ 02.06.
+
     @media screen and (min-width: $tablet) {
         margin-left: -30px;
-        }
+        margin-bottom: -30px; //!+++++++ 02.06.
+    }
 }
 
 // _________________________________________________________________________
 
 .clients__item {
-    // width: 100%;
+    
     width: calc(100% / 2 - 30px);
 
     height: 92px;
